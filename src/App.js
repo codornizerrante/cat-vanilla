@@ -8,7 +8,6 @@ import Skills from './pages/Skills';
 import Education from './pages/Education';
 import Footer from './components/Footer';
 import Default from './components/Default';
-import './styles/global.css';
 
 const App = () => {
   const location = useLocation();
@@ -52,7 +51,6 @@ const App = () => {
   );
 };
 
-// Envuelve `App` con el `Router`
 const AppWithRouter = () => (
   <Router>
     <App />

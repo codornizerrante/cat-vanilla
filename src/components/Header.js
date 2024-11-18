@@ -4,10 +4,10 @@ import profileImage from '../images/profile.jpg';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header>
       <h1><Link to="/">Exequiel's CV</Link></h1>
-      <h6>Head of IT Operations at Galileo Technologies | IT Infrastructure Manager | IT Compliance | Cybersecurity</h6>
-      <nav>
+      <h2>Head of IT Operations at Galileo Technologies | IT Infrastructure Manager | IT Compliance | Cybersecurity</h2>
+      <nav className="space-x-4">
         <ul>
           <li><Link to="/about">Sobre mi</Link></li>
           <li><Link to="/experience">Experiencia</Link></li>

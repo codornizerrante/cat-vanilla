@@ -3,7 +3,7 @@ import educationData from '../services/educationData.json';
 
 const Education = () => {
   return (
-    <section id="education">
+    <section id="education" >
       <h2>Educación</h2>
       <ul>
         {educationData.map((edu, index) => (
