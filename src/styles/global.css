@@ -1,58 +1,37 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  header, footer {
-    background-color: #2C3E50;
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  header nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  main {
-    padding: 20px;
-  }  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 200px; 
+  line-height: 1.6;
+}
 
-  /* Fijar el header en la parte superior */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #2C3E50;
+  color: white;
   padding: 10px 20px;
-  z-index: 1000; /* Asegura que el header quede encima del contenido */
+  z-index: 1000;
 }
 
-/* Espaciado adicional en el body para evitar que el contenido se esconda bajo el header */
-body {
-  padding-top: 120px; /* Ajusta este valor según el tamaño de tu header */
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
 }
 
-/* Desplazamiento suave */
-html {
-  scroll-behavior: smooth;
+header nav ul li {
+  display: inline;
 }
 
-/* Estilo de la foto */
 .photo-container {
   position: fixed;
   top: 20px;
@@ -68,5 +47,35 @@ html {
 .header-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que la imagen se ajuste al círculo */
+  object-fit: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2C3E50;
+  color: white;
+  text-align: right;
+  padding: 1rem;
+  border-top: 2px solid #ccc;
+  z-index: 1000;
+}
+
+footer p {
+  padding-right: 40px;
 }

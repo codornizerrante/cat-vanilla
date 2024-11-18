@@ -6,6 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1><Link to="/">Exequiel's CV</Link></h1>
+      <h6>Head of IT Operations at Galileo Technologies | IT Infrastructure Manager | IT Compliance | Cybersecurity</h6>
       <nav>
         <ul>
           <li><Link to="/about">Sobre mi</Link></li>

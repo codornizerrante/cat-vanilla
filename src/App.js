@@ -1,32 +1,62 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 import Header from './components/Header';
 import About from './components/About';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
-import Education from './components/Education';
+import Experience from './pages/Experience';
+import Skills from './pages/Skills';
+import Education from './pages/Education';
 import Footer from './components/Footer';
 import Default from './components/Default';
 import './styles/global.css';
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/" element={<Default />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  );
-}
+const App = () => {
+  const location = useLocation();
 
-export default App;
+  const pageVariants = {
+    initial: { opacity: 0, x: 100 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -100 },
+  };
+
+  const pageTransition = {
+    duration: 0.5,
+    ease: "easeInOut",
+  };
+
+  return (
+    <div className="App">
+      <Header />
+      <main>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={location.pathname}
+            variants={pageVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={pageTransition}
+          >
+            <Routes location={location}>
+              <Route path="/about" element={<About />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/education" element={<Education />} />
+              <Route path="/" element={<Default />} />
+            </Routes>
+          </motion.div>
+        </AnimatePresence>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+// Envuelve `App` con el `Router`
+const AppWithRouter = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWithRouter;

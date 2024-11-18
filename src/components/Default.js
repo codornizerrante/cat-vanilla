@@ -1,8 +1,8 @@
 import React from 'react';
 import About from '../components/About';
-import Experience from '../components/Experience';
-import Skills from '../components/Skills';
-import Education from '../components/Education';
+import Experience from '../pages/Experience';
+import Skills from '../pages/Skills';
+import Education from '../pages/Education';
 
 const Default = () => {
   return (
