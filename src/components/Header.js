@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <h1><Link to="/">Exequiel's CV</Link></h1>
       <h2>Head of IT Operations at Galileo Technologies | IT Infrastructure Manager | IT Compliance | Cybersecurity</h2>
-      <nav className="space-x-4">
+      <nav>
         <ul>
           <li><Link to="/about">Sobre mi</Link></li>
           <li><Link to="/experience">Experiencia</Link></li>

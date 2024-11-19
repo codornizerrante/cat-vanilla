@@ -51,7 +51,7 @@ body {
   
   header nav ul li {
     display: inline;
-    @apply text-secondary hover:text-white;
+    @apply text-secondary p-2 bg-primary rounded-lg no-underline hover:bg-background hover:text-primary transition-colors duration-300;
   }
   
   .photo-container {
