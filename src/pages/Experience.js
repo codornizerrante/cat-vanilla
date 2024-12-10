@@ -9,6 +9,8 @@ const Experience = () => {
         {experienceData.map((job, index) => (
           <li key={index}>
             <strong>{job.title}</strong> - {job.company}
+            <br /><em>{job.dates}</em>
+            <span style={{ marginBottom: '20px', display: 'block' }}>{job.details}</span>
           </li>
         ))}
       </ul>

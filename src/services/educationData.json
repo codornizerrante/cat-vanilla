@@ -1,7 +1,15 @@
 [
     {
       "degree": "Licenciatura en Tecnología de la Información",
-      "institution": "Universidad ABC"
+      "institution": "Universidad de la Ciuidad de Buenos Aires",
+      "dates": "Agosto del 2023 - Actualidad",
+      "details": "El objetivo es desempeñarse en diversas organizaciones con autonomía y de forma colaborativa o transformarse en emprendedor tecnológico. Dominar metodologías ágiles, habilidades de liderazgo y la creatividad necesaria para resolver desafíos en sus organizaciones tanto en el sector público como en el privado."
+    },
+    {
+      "degree": "Tecnicatura Superior en Soporte de Infraestructuras",
+      "institution": "ISTEA",
+      "dates": "Agosto del 2020 - Diciembre el 2022",
+      "details": "Esta formación se centra en aspectos relacionados con la gestión, configuración y mantenimiento de hardware, software y redes. El fin es trabajar en roles técnicos en departamentos de tecnología de la información de empresas, instituciones educativas, organizaciones gubernamentales y otros entornos donde se requiere mantener y optimizar la infraestructura tecnológica."
     }
   ]
   

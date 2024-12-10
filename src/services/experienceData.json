@@ -1,11 +1,15 @@
 [
     {
       "title": "Jefe de Operaciones IT",
-      "company": "Empresa XYZ"
+      "company": "Galileo Technologies",
+      "dates": "Enero del 2017 - Actualidad",
+      "details": "Líder de equipos y proyectos de tecnología. Destacado por poseer conocimientos técnicos sólidos, resolución de problemas eficiente y excelentes habilidades en ciberseguridad. Experiencia en situaciones cambiantes y capacidad para tomar decisiones críticas. Coordinación del equipo de soporte a distintas locaciones alrededor del mundo. Administración de sistemas e infraestructura on premise y cloud. Soporte en actividades de microinformática y mantenimiento preventivo. Configuración y mantenimiento de Active Directory, DNS, servidores Windows y Linux. Mantenimiento de redes, VPN y telefonía. Gestión de activos tecnológicos. Implementación de medidas de ciberseguridad y auditorías."
     },
     {
-      "title": "Especialista en Infraestructura",
-      "company": "Empresa ABC"
+      "title": "SysAdmin / Analista Tecnico",
+      "company": "Minder",
+      "dates": "Enero del 2013 - Diciembre del 2016",
+      "details": "Administración y mantenimiento de usuarios, servidores y redes. Resolución de problemas e implementación de políticas de seguridad. Gestión de copias de seguridad y recuperación de datos. Administración de Active Directory (LDAP) y Google Workspace. Soporte de primer y segundo nivel en infraestructura y actividades de microinformática. Configuración de AD, DNS, DHCP, servidores (Linux). Mantenimiento de redes, VPN, telefonía IP. Configuración y mantenimiento de sistemas de tickets. Instalación y configuración de controles de accesos. Instalación y gestión de herramientas de virtualización. Soporte en tecnologías Oracle eBS. Mantenimiento general de entornos, tanto capa de aplicación como de base de datos. Upgrade. Aplicación de parches. Análisis y resolución de problemas. Desarrollos de nivel junior."
     }
   ]
   

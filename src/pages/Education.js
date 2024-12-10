@@ -9,6 +9,8 @@ const Education = () => {
         {educationData.map((edu, index) => (
           <li key={index}>
             <strong>{edu.degree}</strong> - {edu.institution}
+            <br /><em>{edu.dates}</em>
+            <span style={{ marginBottom: '20px', display: 'block' }}>{edu.details}</span>
           </li>
         ))}
       </ul>
